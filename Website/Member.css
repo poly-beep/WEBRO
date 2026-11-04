@@ -1,0 +1,58 @@
+      #Header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #2b1d14;
+        gap: 40px;
+        padding: 25px 40px;
+      }
+      
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #e5d3b3;
+        color: #2b1d14;
+      }
+
+      div {
+        display: flex;
+        gap: 25px;
+      }
+
+      a {
+        color: aliceblue;
+        text-decoration: none;
+      }
+
+      button {
+        background-color: #6f4e37;
+        color: white;
+        font-weight: bold;
+        padding: 12px 28px;
+        border-radius: 6px;
+      }
+
+      h3 {
+        font-family: Georgia, serif;
+        font-weight: 500;
+        font-size: 48px;
+        text-align: center;
+        margin-top: 60px;
+      }
+
+      form {
+        text-align: center;
+      }
+
+  #Footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #765341;
+    color: white;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+  }

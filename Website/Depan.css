@@ -1,0 +1,63 @@
+
+  body {
+    background-image: url("CfBg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  
+  #Header {
+    gap: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 40px;
+    background-color:#362312;
+    color: aliceblue;
+  }
+
+  h3 {
+    margin: 0;
+    color: white;
+  }
+   
+  p {
+    font-weight: 100;
+    text-align: right;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-right: 50px;
+  }   
+  
+  h1 {
+    font-weight: 300;
+    text-align: right;
+    font-family: Georgia, serif;
+    padding-right: 50px;
+  }
+
+  div {
+    display: flex;
+    gap: 25px;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  button {
+    background-color: #2e1a1a;
+    color: white;
+    font-weight: bold;
+    border-color: #F5EBDD;
+    border-radius: 20px;
+    padding: 12px 28px;
+    border-radius: 6px;
+  }
+
+  #FotoKopi img {
+    align-items: center;
+  }

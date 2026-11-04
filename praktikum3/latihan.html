@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>u o u o</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <!--bgian i-->
+    <p id="myParagraph">Ini adalah paragraf asli.</p>
+    <button onclick="changeText()">Ubah Teks</button>
+    <script>
+      function changeText() {
+        document.getElementById("myParagraph").innerHTML =
+          "Teks telah berubah!";
+      }
+    </script>
+
+    <button onclick="tombol()">pencet</button>
+    <button onclick="greetUser()">pencet lagi</button>
+    <!--bagian G-->
+    <button onclick="showMessage()">Tampilkan Pesan</button>
+    <button onclick="changeBackground()">Ubah Warna Latar</button>
+    <script>
+      function showMessage() {
+        alert("jawa");
+      }
+      function changeBackground() {
+        document.body.style.backgroundColor = "lightcoral";
+      }
+    </script>
+  </body>
+
+  <!--bagian E-->
+  <form name="formPendaftaran" onsubmit="return validateForm();">
+    Nama: <input type="text" name="nama" /><br />
+    Email: <input type="email" name="email" /><br />
+    <input type="submit" value="Sign In" />
+  </form>
+
+  <!--bagian F-->
+  <form id="emailForm">
+    <h2>Form Email</h2>
+    <input type="email" id="email" placeholder="Email" />
+    <div id="emailError" style="color: red"></div>
+    <button type="submit">Kirim</button>
+  </form>
+
+  <script>
+    document
+      .getElementById("emailForm")
+      .addEventListener("submit", function (event) {
+        event.preventDefault();
+        const err = document.getElementById("emailError");
+        err.textContent = "";
+        const email = document.getElementById("email").value.trim();
+        const pola = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (email === "") {
+          err.textContent = "Email tidak boleh kosong.";
+        } else if (!pola.test(email)) {
+          err.textContent = "Format email tidak valid.";
+        } else {
+          alert("Email berhasil dikirim!");
+          this.reset();
+        }
+      });
+  </script>
+
+  <!--Bagian H-->
+  <form name="registrationForm" onsubmit="return validateRegistrationForm();">
+    Email: <input type="text" name="email" /><br />
+    Kata Sandi: <input type="password" name="password" /><br />
+    <input type="submit" value="Daftar" />
+  </form>
+  <script>
+    function validateRegistrationForm() {
+      let f = document.forms["registrationForm"];
+      let email = f["email"].value;
+      let password = f["password"].value;
+      if (email == "" || email.indexOf("@") == -1) {
+        alert("Masukkan email yang valid.");
+        return false;
+      }
+      if (password.length < 6) {
+        alert("Kata sandi harus memiliki minimal 6 karakter.");
+        return false;
+      }
+      alert("Pendaftaran berhasil!");
+      return true;
+    }
+  </script>
+
+  <script src="latihan.js"></script>
+</html>

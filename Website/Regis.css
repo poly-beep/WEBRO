@@ -1,0 +1,8 @@
+#Header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: lightblue;
+        gap: 40px;
+        padding: 25px 40px;
+      }

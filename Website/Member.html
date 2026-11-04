@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Membership</title>
+    <link rel="stylesheet" href="Member.css" />
+  </head>
+  <body>
+    <div id="Header">
+      <h2><a href="Depan.html">LINT OF KIND</a></h2>
+
+      <div>
+        <a href="#">Our Story</a>
+        <a href="Menu.html">Menu</a>
+        <a href="Member.html">Membership</a>
+        <a href="#">Events</a>
+        <a href="#">Locations</a>
+        <a href="Regis.html">Registrasi</a>
+      </div>
+
+      <button onclick="tombol()">Book a table</button>
+    </div>
+
+    <h3>Membership Login</h3>
+    <form name="formPendaftaran" onsubmit="return validateForm();">
+      Nama: <input type="text" name="nama" /><br />
+      Email: <input type="email" name="email" /><br />
+      <input type="submit" value="Sign In" />
+    </form>
+    <div id="Footer">
+      <p>Dibuat oleh Giniung Pratidina</p>
+    </div>
+  </body>
+  <script src="Member.js"></script>
+</html>
