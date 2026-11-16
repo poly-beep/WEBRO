@@ -1,4 +1,3 @@
-// 1. Validasi khusus Nama (dipanggil lewat onblur="validateName()")
 function validateName() {
     var name = document.getElementById("name").value; 
     var hurufDoang = /^[A-Za-z\s]+$/;
@@ -44,7 +43,6 @@ function validateAge() {
     return true;
 }
 
-// 4. Fungsi utama saat tombol Submit ditekan
 function validateForm() {
     if (!validateName()) return false;
     if (!validateEmail()) return false;
